@@ -1,0 +1,157 @@
+/* Reseteo básico para que todos los navegadores partan de cero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    /* Un color rosa similar al de la web original */
+    background-color: #fdcbf1; 
+    color: #333;
+}
+
+/* --- ESTILOS DEL HEADER --- */
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 40px;
+    position: sticky; 
+    top: 0; 
+    background-color: #fdcbf1; 
+    z-index: 1000; 
+}
+
+
+.logo a {
+    text-decoration: underline;
+    color: #5c007a; /* Tono violeta oscuro */
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none; /* Quita los puntitos de la lista */
+    gap: 20px; /* Espacio entre los links */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3a004d;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #a020f0; /* Color al pasar el mouse */
+}
+
+/* Estilo del botón de Iniciar Sesión */
+.btn-login {
+    text-decoration: none;
+    color: #3a004d;
+    border: 1px solid #c48cb3;
+    padding: 8px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #3a004d;
+    color: #ffffff;
+}
+
+.logo-img {
+    width: 150px; /* Acá controlás el ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #3a004d;
+    font-weight: 600;
+    font-size: 0.95rem;
+    
+    border: 1px solid #3a004d; 
+    padding: 6px 12px; 
+    border-radius: 6px; 
+    
+    transition: all 0.3s ease;
+    white-space: nowrap; 
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #3a004d; 
+    color: #ffffff; 
+}
+
+.hero {
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: center; 
+}
+
+.hero img {
+    max-width: 1000px;
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+
+/* --- SECCIÓN 3: INFORMACIÓN Y PROBLEMAS --- */
+.info-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-container {
+    max-width: 900px; /* Mantiene el texto contenido para que no sea muy largo de leer */
+    width: 100%;
+    color: #3a004d; /* Color violeta oscuro para el texto */
+}
+
+/* Título principal de la sección */
+.info-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+/* Párrafos centrados */
+.text-center, .subtitle-center {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Estilo para la lista de viñetas */
+.lista-problemas {
+    margin: 20px 0 30px 40px; /* Da un poco de margen a la izquierda */
+    font-size: 1.1rem;
+    line-height: 1.6; /* Separa un poco los renglones para que se lea mejor */
+}
+
+.lista-problemas li {
+    margin-bottom: 10px; /* Separa cada puntito del siguiente */
+}
+
+/* Clases de apoyo para textos especiales */
+.italic-text {
+    font-style: italic;
+}
+
+.bold-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
