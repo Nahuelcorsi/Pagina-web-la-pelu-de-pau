@@ -155,3 +155,64 @@ body {
     font-weight: 700;
     font-size: 1.2rem;
 }
+
+
+/* --- SECCIÓN 7: FOOTER PROFESIONAL --- */
+.footer {
+    background-color: #f2aee0; /* Rosa de contraste */
+    padding: 50px 40px 20px; 
+    color: #3a004d;
+}
+
+/* Contenedor principal dividido en columnas */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las columnas bajen si la pantalla es muy chica */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el bloque en pantallas grandes */
+    border-bottom: 1px solid #c48cb3; /* Línea separadora antes de los derechos */
+    padding-bottom: 30px;
+}
+
+/* Propiedades compartidas para las 3 columnas */
+.footer-brand, .footer-contact, .footer-legal {
+    flex: 1; /* Hace que todas las columnas ocupen el mismo ancho */
+    min-width: 220px; /* Evita que queden excesivamente flacas */
+}
+
+.footer h3, .footer h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #5c007a;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Enlaces del footer (Contacto y Legales) */
+.footer-contact a, .footer-legal a {
+    display: block; /* Pone un enlace debajo del otro en forma de lista */
+    color: #3a004d;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover, .footer-legal a:hover {
+    color: #a020f0;
+    text-decoration: underline;
+}
+
+/* Firma y Copyright */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
